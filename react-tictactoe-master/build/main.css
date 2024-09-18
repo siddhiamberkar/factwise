@@ -1,0 +1,32 @@
+body{
+  font-family: Verdana;
+}
+
+.board {
+  width: 360px;
+  height: 360px;
+}
+
+.cell {
+  float: left;
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  font-size: 5em;
+  background-color: wheat;
+  border: 3px solid black;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.cell:hover:not(.cell-claimed):not(.cell-winner):not(.cell-game-over) {
+  border: 3px solid mediumaquamarine;
+}
+
+.cell-claimed {
+  background-color: mediumaquamarine;
+}
+
+.cell-winner {
+  background-color: tomato;
+}
